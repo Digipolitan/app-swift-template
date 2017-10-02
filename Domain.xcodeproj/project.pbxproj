@@ -81,6 +81,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A30C1FD01F82978C00B3BF26 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
 		A337EF0D1F81571E00BE822E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +104,6 @@
 				A337EF111F81571E00BE822E /* domain.staging.json */,
 			);
 			path = Environments;
-			sourceTree = "<group>";
-		};
-		A337EF121F81597200BE822E /* Definitions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Definitions;
 			sourceTree = "<group>";
 		};
 		A337EF131F81597200BE822E /* Implementations */ = {
@@ -175,7 +175,7 @@
 			children = (
 				A3A94E191F7B9B0E00843BB2 /* Domain.h */,
 				A337EF161F8159F000BE822E /* Common */,
-				A337EF121F81597200BE822E /* Definitions */,
+				A30C1FD01F82978C00B3BF26 /* Definitions */,
 				A337EF131F81597200BE822E /* Implementations */,
 				A337EF0D1F81571E00BE822E /* Resources */,
 				A3A94E1A1F7B9B0E00843BB2 /* Info.plist */,

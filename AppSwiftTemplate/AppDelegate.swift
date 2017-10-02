@@ -41,11 +41,11 @@ extension AppDelegate {
     private func setupEnv() throws {
         let env = RuntimeEnvironment.shared
         let mode = env.mode.rawValue
-        try env.setFile("app.\(mode)", format: .json)
         guard let bundle = Bundle.allFrameworks.first(where: { $0.bundlePath.hasSuffix("Domain.framework") }) else {
             fatalError("Missing Domain bundle")
         }
         try env.setFile("domain.\(mode)", format: .json, bundle: bundle)
+        try env.setFile("app.\(mode)", format: .json)
     }
 
     private func setupDependencies() {
