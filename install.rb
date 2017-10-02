@@ -5,7 +5,6 @@ require 'digipolitan-apps-tools'
 Digipolitan::UI.success("--- Step: Rename Xcodeproj ---")
 Digipolitan::Xcodeproj.rename_project()
 if File.exists?("./Podfile")
-  system("pod deintegrate")
   system("pod install")
 end
 Digipolitan::UI.success("--- Step: Clear installer ---")
