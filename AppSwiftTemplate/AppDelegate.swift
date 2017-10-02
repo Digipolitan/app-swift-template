@@ -1,0 +1,56 @@
+//
+//  AppDelegate.swift
+//  AppSwiftTemplate
+//
+//  Created by Benoit BRIATTE on 27/09/2017.
+//  Copyright © 2017 Digipolitan. All rights reserved.
+//
+
+import UIKit
+import RuntimeEnvironment
+import DependencyInjector
+import Domain
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+        self.bootstrap()
+
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = UINavigationController(rootViewController: HomeViewController())
+        window.makeKeyAndVisible()
+        self.window = window
+        return true
+    }
+}
+
+extension AppDelegate {
+    fileprivate func bootstrap() {
+        do {
+            try self.setupEnv()
+            self.setupDependencies()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+
+    private func setupEnv() throws {
+        let env = RuntimeEnvironment.shared
+        let mode = env.mode.rawValue
+        try env.setFile("app.\(mode)", format: .json)
+        guard let bundle = Bundle.allFrameworks.first(where: { $0.bundlePath.hasSuffix("Domain.framework") }) else {
+            fatalError("Missing Domain bundle")
+        }
+        try env.setFile("domain.\(mode)", format: .json, bundle: bundle)
+    }
+
+    private func setupDependencies() {
+        let injector = Injector.default
+        injector.register(module: ModelsModule.shared, with: "Models")
+        injector.register(module: AlamofireModule.shared, with: "Alamofire")
+    }
+}
