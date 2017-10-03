@@ -38,6 +38,7 @@ public class Session {
 
     @discardableResult
     public static func start() -> Session {
+        self.restore()
         guard Session.opened == nil else {
             fatalError("Session already started, please use the restore method")
         }
@@ -46,6 +47,7 @@ public class Session {
         return session
     }
 
+    @discardableResult
     public static func restore() -> Session? {
         guard Session.opened == nil else {
             return Session.opened
