@@ -19,6 +19,7 @@
 		A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A7F1F823F2000A2A6D0 /* HomeViewController.swift */; };
 		A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A811F823F2000A2A6D0 /* AppDelegate.swift */; };
 		A36B9A8B1F823FFB00A2A6D0 /* Domain.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */; };
 		AAB945447BF5DBE0243B998D /* Pods_Common_AppSwiftTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33850ED3EDA7E0D1BD3D4611 /* Pods_Common_AppSwiftTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -417,6 +418,7 @@
 			files = (
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
+				A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */,
 				A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */,
 				A30C1FE21F829B4B00B3BF26 /* Session.swift in Sources */,
 			);

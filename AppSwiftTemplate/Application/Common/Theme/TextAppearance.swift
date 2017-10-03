@@ -55,9 +55,9 @@ public extension UITextField {
 
     public func setPlaceholderAppearance(_ textAppearance: TextAppearance, placeholder: String) {
         self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [
-            NSForegroundColorAttributeName: textAppearance.foregroundColor,
-            NSBackgroundColorAttributeName: textAppearance.backgroundColor,
-            NSFontAttributeName: textAppearance.font
+            NSAttributedStringKey.foregroundColor: textAppearance.foregroundColor,
+            NSAttributedStringKey.backgroundColor: textAppearance.backgroundColor,
+            NSAttributedStringKey.font: textAppearance.font
         ])
     }
 }
