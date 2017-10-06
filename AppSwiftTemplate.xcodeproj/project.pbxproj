@@ -15,6 +15,8 @@
 		A31866781F86846300D10460 /* FontTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866771F86846300D10460 /* FontTransform.swift */; };
 		A318667D1F876E0E00D10460 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = A318667C1F876E0E00D10460 /* default.json */; };
 		A31866831F879D9200D10460 /* ThemeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866821F879D9200D10460 /* ThemeError.swift */; };
+		A31866861F87E8BF00D10460 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866851F87E8BE00D10460 /* BaseViewController.swift */; };
+		A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866871F87ECE500D10460 /* BaseViewController+Alert.swift */; };
 		A36B9A621F822DCF00A2A6D0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; };
 		A36B9A731F823F0B00A2A6D0 /* AppSwiftTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */; };
 		A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */ = {isa = PBXBuildFile; fileRef = A36B9A771F823F2000A2A6D0 /* app.production.json */; };
@@ -65,6 +67,8 @@
 		A31866771F86846300D10460 /* FontTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTransform.swift; sourceTree = "<group>"; };
 		A318667C1F876E0E00D10460 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		A31866821F879D9200D10460 /* ThemeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeError.swift; sourceTree = "<group>"; };
+		A31866851F87E8BE00D10460 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A31866871F87ECE500D10460 /* BaseViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+Alert.swift"; sourceTree = "<group>"; };
 		A36B9A631F822DCF00A2A6D0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftTemplateUITests.swift; sourceTree = "<group>"; };
 		A36B9A721F823F0800A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +145,15 @@
 			path = Themes;
 			sourceTree = "<group>";
 		};
+		A31866841F87E8B200D10460 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A31866851F87E8BE00D10460 /* BaseViewController.swift */,
+				A31866871F87ECE500D10460 /* BaseViewController+Alert.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		A36B9A701F823F0800A2A6D0 /* AppSwiftTemplateUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +223,7 @@
 		A36B9A801F823F2000A2A6D0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A31866841F87E8B200D10460 /* ViewController */,
 				A30C1FD91F829A1200B3BF26 /* Keyboard */,
 				A30C1FD11F829A1200B3BF26 /* Session */,
 				A30C1FDB1F829A1200B3BF26 /* Theme */,
@@ -376,6 +390,7 @@
 				"${BUILT_PRODUCTS_DIR}/IdylleClient/IdylleClient.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RuntimeEnvironment/RuntimeEnvironment.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -386,6 +401,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IdylleClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RuntimeEnvironment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,8 +465,10 @@
 				A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */,
 				A31866831F879D9200D10460 /* ThemeError.swift in Sources */,
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
+				A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
 				A3F341BE1F859BA1003180FA /* User.swift in Sources */,
+				A31866861F87E8BF00D10460 /* BaseViewController.swift in Sources */,
 				A31866721F867CA900D10460 /* ThemeManager.swift in Sources */,
 				A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */,
 				A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */,

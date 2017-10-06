@@ -1,7 +1,6 @@
 workspace 'AppSwiftTemplate.xcworkspace'
 
 abstract_target 'Common' do
-	# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 	use_frameworks!
 
 	pod 'DependencyInjectorObjectMapper'
@@ -14,8 +13,10 @@ abstract_target 'Common' do
 		platform :ios, '8.0'
 	end
 
-  target 'AppSwiftTemplate' do
-			project 'AppSwiftTemplate.xcodeproj'
-      platform :ios, '8.0'
-  end
+    target 'AppSwiftTemplate' do
+        project 'AppSwiftTemplate.xcodeproj'
+        platform :ios, '8.0'
+
+        pod 'SwiftMessages'
+    end
 end
