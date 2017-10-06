@@ -10,11 +10,6 @@ import ObjectMapper
 
 public class Theme: ImmutableMappable {
 
-    public enum ThemeError: Error {
-        case noSuchTheme(file: String)
-        case malformatedTheme
-    }
-
     public let identifier: String
 
     public let body: TextAppearance
@@ -35,7 +30,7 @@ public class Theme: ImmutableMappable {
 
     public let success: TextAppearance?
 
-    public convenience init(file: String, bundle: Bundle = .main) throws {
+    public convenience required init(file: String, bundle: Bundle = .main) throws {
         guard let url = bundle.url(forResource: file, withExtension: file.hasSuffix("json") ? nil : "json") else {
             throw ThemeError.noSuchTheme(file: file)
         }

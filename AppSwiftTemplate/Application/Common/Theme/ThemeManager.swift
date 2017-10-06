@@ -10,9 +10,19 @@ import Foundation
 
 public class ThemeManager {
 
-    public static var defaultBundle: Bundle = .main
+    public struct LoadConfiguration {
+        public let bundle: Bundle
+        public let type: Theme.Type
+        public let infoKey: String
 
-    public static let infoKey = "Themes"
+        public init(bundle: Bundle = .main, type: Theme.Type = Theme.self, infoKey: String = "Themes") {
+            self.bundle = bundle
+            self.type = type
+            self.infoKey = infoKey
+        }
+    }
+
+    public static var configuration = LoadConfiguration()
 
     public enum Keys {
         public static let currentTheme: String = "app.currentTheme"
@@ -37,11 +47,12 @@ public class ThemeManager {
     }
 
     private init() throws {
-        guard let info = ThemeManager.defaultBundle.infoDictionary,
-            let themeFiles = info[ThemeManager.infoKey] as? [String] else {
-                fatalError("[!] Missing or invalid theme list; set themes in Info.plist key '\(ThemeManager.infoKey)'")
+        let configuration = ThemeManager.configuration
+        guard let info = configuration.bundle.infoDictionary,
+            let themeFiles = info[configuration.infoKey] as? [String] else {
+                fatalError("[!] Missing or invalid theme list; set themes in Info.plist key '\(configuration.infoKey)'")
         }
-        self.themes = try themeFiles.map { try Theme(file: $0, bundle: ThemeManager.defaultBundle) }
+        self.themes = try themeFiles.map { try configuration.type.init(file: $0, bundle: configuration.bundle) }
         let userDefaults = UserDefaults.standard
         if let identifier = userDefaults.string(forKey: Keys.currentTheme),
             let theme = self.themes.first(where: { $0.identifier == identifier }) {

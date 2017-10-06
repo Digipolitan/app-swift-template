@@ -14,6 +14,7 @@
 		A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866731F86825B00D10460 /* UIColor+RGB255.swift */; };
 		A31866781F86846300D10460 /* FontTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866771F86846300D10460 /* FontTransform.swift */; };
 		A318667D1F876E0E00D10460 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = A318667C1F876E0E00D10460 /* default.json */; };
+		A31866831F879D9200D10460 /* ThemeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866821F879D9200D10460 /* ThemeError.swift */; };
 		A36B9A621F822DCF00A2A6D0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; };
 		A36B9A731F823F0B00A2A6D0 /* AppSwiftTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */; };
 		A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */ = {isa = PBXBuildFile; fileRef = A36B9A771F823F2000A2A6D0 /* app.production.json */; };
@@ -63,6 +64,7 @@
 		A31866731F86825B00D10460 /* UIColor+RGB255.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB255.swift"; sourceTree = "<group>"; };
 		A31866771F86846300D10460 /* FontTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTransform.swift; sourceTree = "<group>"; };
 		A318667C1F876E0E00D10460 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+		A31866821F879D9200D10460 /* ThemeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeError.swift; sourceTree = "<group>"; };
 		A36B9A631F822DCF00A2A6D0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftTemplateUITests.swift; sourceTree = "<group>"; };
 		A36B9A721F823F0800A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				A31866711F867CA900D10460 /* ThemeManager.swift */,
 				A31866731F86825B00D10460 /* UIColor+RGB255.swift */,
 				A31866771F86846300D10460 /* FontTransform.swift */,
+				A31866821F879D9200D10460 /* ThemeError.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */,
+				A31866831F879D9200D10460 /* ThemeError.swift in Sources */,
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
 				A3F341BE1F859BA1003180FA /* User.swift in Sources */,
