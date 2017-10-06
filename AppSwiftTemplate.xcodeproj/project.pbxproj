@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		A30C1FE21F829B4B00B3BF26 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FD21F829A1200B3BF26 /* Session.swift */; };
 		A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */; };
+		A31866701F867C9C00D10460 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318666F1F867C9C00D10460 /* Theme.swift */; };
+		A31866721F867CA900D10460 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866711F867CA900D10460 /* ThemeManager.swift */; };
+		A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866731F86825B00D10460 /* UIColor+RGB255.swift */; };
+		A31866781F86846300D10460 /* FontTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866771F86846300D10460 /* FontTransform.swift */; };
+		A318667D1F876E0E00D10460 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = A318667C1F876E0E00D10460 /* default.json */; };
 		A36B9A621F822DCF00A2A6D0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; };
 		A36B9A731F823F0B00A2A6D0 /* AppSwiftTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */; };
 		A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */ = {isa = PBXBuildFile; fileRef = A36B9A771F823F2000A2A6D0 /* app.production.json */; };
@@ -20,6 +25,7 @@
 		A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A811F823F2000A2A6D0 /* AppDelegate.swift */; };
 		A36B9A8B1F823FFB00A2A6D0 /* Domain.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */; };
+		A3F341BE1F859BA1003180FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F341BD1F859BA0003180FA /* User.swift */; };
 		AAB945447BF5DBE0243B998D /* Pods_Common_AppSwiftTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33850ED3EDA7E0D1BD3D4611 /* Pods_Common_AppSwiftTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +58,11 @@
 		A30C1FD21F829A1200B3BF26 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAppearance.swift; sourceTree = "<group>"; };
+		A318666F1F867C9C00D10460 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A31866711F867CA900D10460 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		A31866731F86825B00D10460 /* UIColor+RGB255.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB255.swift"; sourceTree = "<group>"; };
+		A31866771F86846300D10460 /* FontTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTransform.swift; sourceTree = "<group>"; };
+		A318667C1F876E0E00D10460 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		A36B9A631F822DCF00A2A6D0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftTemplateUITests.swift; sourceTree = "<group>"; };
 		A36B9A721F823F0800A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +76,7 @@
 		A36B9A821F823F2000A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A94DE91F7B9AB800843BB2 /* AppSwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A94DFD1F7B9AB800843BB2 /* AppSwiftTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppSwiftTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F341BD1F859BA0003180FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../../../../../../MacOS/Applications/PolymorphCLI/DerivedData/PolymorphCLI/Build/Products/Debug/build-1507156944.96932/Swift/Definitions/U/User.swift"; sourceTree = "<group>"; };
 		C20D27A1A24674F68AB22F72 /* Pods-Common-AppSwiftTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-AppSwiftTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Common-AppSwiftTemplate/Pods-Common-AppSwiftTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		E39C22F2B1C4E2809747A913 /* Pods-Common-AppSwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-AppSwiftTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Common-AppSwiftTemplate/Pods-Common-AppSwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +112,7 @@
 		A30C1FD91F829A1200B3BF26 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				A3F341BD1F859BA0003180FA /* User.swift */,
 				A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */,
 			);
 			path = Keyboard;
@@ -109,8 +122,20 @@
 			isa = PBXGroup;
 			children = (
 				A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */,
+				A318666F1F867C9C00D10460 /* Theme.swift */,
+				A31866711F867CA900D10460 /* ThemeManager.swift */,
+				A31866731F86825B00D10460 /* UIColor+RGB255.swift */,
+				A31866771F86846300D10460 /* FontTransform.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		A31866791F868B2E00D10460 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				A318667C1F876E0E00D10460 /* default.json */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 		A36B9A701F823F0800A2A6D0 /* AppSwiftTemplateUITests */ = {
@@ -136,6 +161,7 @@
 		A36B9A751F823F2000A2A6D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A31866791F868B2E00D10460 /* Themes */,
 				A36B9A761F823F2000A2A6D0 /* Environments */,
 				A36B9A7A1F823F2000A2A6D0 /* Assets.xcassets */,
 			);
@@ -317,6 +343,7 @@
 				A36B9A841F823F2700A2A6D0 /* app.development.json in Resources */,
 				A36B9A851F823F2700A2A6D0 /* app.staging.json in Resources */,
 				A36B9A871F823F2E00A2A6D0 /* HomeViewController.xib in Resources */,
+				A318667D1F876E0E00D10460 /* default.json in Resources */,
 				A36B9A861F823F2900A2A6D0 /* Assets.xcassets in Resources */,
 				A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */,
 			);
@@ -416,11 +443,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */,
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
+				A3F341BE1F859BA1003180FA /* User.swift in Sources */,
+				A31866721F867CA900D10460 /* ThemeManager.swift in Sources */,
 				A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */,
 				A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */,
 				A30C1FE21F829B4B00B3BF26 /* Session.swift in Sources */,
+				A31866701F867C9C00D10460 /* Theme.swift in Sources */,
+				A31866781F86846300D10460 /* FontTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

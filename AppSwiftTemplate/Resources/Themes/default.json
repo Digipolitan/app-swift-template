@@ -1,0 +1,35 @@
+{
+    "identifier": "com.digipolitan.theme.default",
+    "body": {
+        "backgroundColor": "#000000",
+        "foregroundColor": "#FFFFFF",
+        "font": {
+            "name": "Helvetica",
+            "size": 12
+        }
+    },
+    "h1": {
+        "backgroundColor": "#000000",
+        "foregroundColor": "#FFFFFF",
+        "font": {
+            "name": "Helvetica",
+            "size": 30
+        }
+    },
+    "placeholder": {
+        "backgroundColor": "#000000",
+        "foregroundColor": "#FFFFFF",
+        "font": {
+            "name": "Helvetica",
+            "size": 12
+        }
+    },
+    "input": {
+        "backgroundColor": "#000000",
+        "foregroundColor": "#FFFFFF",
+        "font": {
+            "name": "Helvetica",
+            "size": 12
+        }
+    }
+}

@@ -10,8 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
+
+        let theme = ThemeManager.shared.current
+        self.titleLabel.setTextAppearance(theme.h1)
     }
 }

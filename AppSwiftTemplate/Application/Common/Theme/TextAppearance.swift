@@ -7,16 +7,46 @@
 //
 
 import UIKit
+import ObjectMapper
 
-public struct TextAppearance {
+public struct TextAppearance: Mappable {
     public let backgroundColor: UIColor
     public let foregroundColor: UIColor
     public let font: UIFont
+    public static let backgroundColorTransformer: HexColorTransform = {
+        return HexColorTransform(prefixToJSON: true, alphaToJSON: true)
+    }()
+    public static let foregroundColorTransformer: HexColorTransform = {
+        return HexColorTransform(prefixToJSON: true, alphaToJSON: true)
+    }()
+    public static let fontTransformer: FontTransform = {
+        return FontTransform()
+    }()
 
-    public init(backgroundColor: UIColor = .clear, foregroundColor: UIColor = .black, font: UIFont = .systemFont(ofSize: UIFont.systemFontSize)) {
+    public enum Consts {
+        public static let backgroundColor: UIColor = .clear
+        public static let foregroundColor: UIColor = .black
+        public static let font: UIFont = .preferredFont(forTextStyle: .body)
+    }
+
+    public init(backgroundColor: UIColor = Consts.backgroundColor, foregroundColor: UIColor = Consts.foregroundColor, font: UIFont = Consts.font) {
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
         self.font = font
+    }
+
+    public init?(map: Map) {
+        let selfClass = type(of: self)
+        self.backgroundColor = (try? map.value("backgroundColor", using: selfClass.backgroundColorTransformer)) ?? Consts.backgroundColor
+        self.foregroundColor = (try? map.value("foregroundColor", using: selfClass.foregroundColorTransformer)) ?? Consts.foregroundColor
+        self.font = (try? map.value("font", using: selfClass.fontTransformer)) ?? Consts.font
+    }
+
+    public mutating func mapping(map: Map) {
+        let selfClass = type(of: self)
+        self.backgroundColor >>> (map["id"], selfClass.backgroundColorTransformer)
+        self.foregroundColor >>> (map["email"], selfClass.foregroundColorTransformer)
+        self.font >>> (map["phone_number"], selfClass.fontTransformer)
     }
 }
 
