@@ -11,12 +11,15 @@
 		A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */; };
 		A31866701F867C9C00D10460 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318666F1F867C9C00D10460 /* Theme.swift */; };
 		A31866721F867CA900D10460 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866711F867CA900D10460 /* ThemeManager.swift */; };
-		A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866731F86825B00D10460 /* UIColor+RGB255.swift */; };
 		A31866781F86846300D10460 /* FontTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866771F86846300D10460 /* FontTransform.swift */; };
 		A318667D1F876E0E00D10460 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = A318667C1F876E0E00D10460 /* default.json */; };
 		A31866831F879D9200D10460 /* ThemeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866821F879D9200D10460 /* ThemeError.swift */; };
 		A31866861F87E8BF00D10460 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866851F87E8BE00D10460 /* BaseViewController.swift */; };
 		A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866871F87ECE500D10460 /* BaseViewController+Alert.swift */; };
+		A318668B1F88FFD200D10460 /* SplashNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318668A1F88FFD200D10460 /* SplashNavigationController.swift */; };
+		A31866901F890D9200D10460 /* TimerSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318668F1F890D9200D10460 /* TimerSplashViewController.swift */; };
+		A31866921F89117200D10460 /* DefaultSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31866911F89117200D10460 /* DefaultSplashViewController.swift */; };
+		A31866941F89170400D10460 /* AppDefaultSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A31866931F89170300D10460 /* AppDefaultSplashViewController.xib */; };
 		A36B9A621F822DCF00A2A6D0 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; };
 		A36B9A731F823F0B00A2A6D0 /* AppSwiftTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */; };
 		A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */ = {isa = PBXBuildFile; fileRef = A36B9A771F823F2000A2A6D0 /* app.production.json */; };
@@ -63,12 +66,15 @@
 		A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAppearance.swift; sourceTree = "<group>"; };
 		A318666F1F867C9C00D10460 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A31866711F867CA900D10460 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		A31866731F86825B00D10460 /* UIColor+RGB255.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB255.swift"; sourceTree = "<group>"; };
 		A31866771F86846300D10460 /* FontTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTransform.swift; sourceTree = "<group>"; };
 		A318667C1F876E0E00D10460 /* default.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
 		A31866821F879D9200D10460 /* ThemeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeError.swift; sourceTree = "<group>"; };
 		A31866851F87E8BE00D10460 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A31866871F87ECE500D10460 /* BaseViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+Alert.swift"; sourceTree = "<group>"; };
+		A318668A1F88FFD200D10460 /* SplashNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashNavigationController.swift; sourceTree = "<group>"; };
+		A318668F1F890D9200D10460 /* TimerSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSplashViewController.swift; sourceTree = "<group>"; };
+		A31866911F89117200D10460 /* DefaultSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSplashViewController.swift; sourceTree = "<group>"; };
+		A31866931F89170300D10460 /* AppDefaultSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppDefaultSplashViewController.xib; sourceTree = "<group>"; };
 		A36B9A631F822DCF00A2A6D0 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36B9A711F823F0800A2A6D0 /* AppSwiftTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwiftTemplateUITests.swift; sourceTree = "<group>"; };
 		A36B9A721F823F0800A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,7 +136,6 @@
 				A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */,
 				A318666F1F867C9C00D10460 /* Theme.swift */,
 				A31866711F867CA900D10460 /* ThemeManager.swift */,
-				A31866731F86825B00D10460 /* UIColor+RGB255.swift */,
 				A31866771F86846300D10460 /* FontTransform.swift */,
 				A31866821F879D9200D10460 /* ThemeError.swift */,
 			);
@@ -152,6 +157,24 @@
 				A31866871F87ECE500D10460 /* BaseViewController+Alert.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A31866891F88FFC100D10460 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A318668A1F88FFD200D10460 /* SplashNavigationController.swift */,
+				A318668F1F890D9200D10460 /* TimerSplashViewController.swift */,
+				A31866911F89117200D10460 /* DefaultSplashViewController.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		A318668E1F890B6A00D10460 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A31866931F89170300D10460 /* AppDefaultSplashViewController.xib */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 		A36B9A701F823F0800A2A6D0 /* AppSwiftTemplateUITests */ = {
@@ -206,6 +229,7 @@
 		A36B9A7C1F823F2000A2A6D0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A318668E1F890B6A00D10460 /* SplashScreen */,
 				A36B9A7D1F823F2000A2A6D0 /* Home */,
 			);
 			path = Scenes;
@@ -223,6 +247,7 @@
 		A36B9A801F823F2000A2A6D0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A31866891F88FFC100D10460 /* SplashScreen */,
 				A31866841F87E8B200D10460 /* ViewController */,
 				A30C1FD91F829A1200B3BF26 /* Keyboard */,
 				A30C1FD11F829A1200B3BF26 /* Session */,
@@ -362,6 +387,7 @@
 				A36B9A871F823F2E00A2A6D0 /* HomeViewController.xib in Resources */,
 				A318667D1F876E0E00D10460 /* default.json in Resources */,
 				A36B9A861F823F2900A2A6D0 /* Assets.xcassets in Resources */,
+				A31866941F89170400D10460 /* AppDefaultSplashViewController.xib in Resources */,
 				A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,9 +488,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31866741F86825B00D10460 /* UIColor+RGB255.swift in Sources */,
 				A31866831F879D9200D10460 /* ThemeError.swift in Sources */,
+				A31866901F890D9200D10460 /* TimerSplashViewController.swift in Sources */,
+				A318668B1F88FFD200D10460 /* SplashNavigationController.swift in Sources */,
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
+				A31866921F89117200D10460 /* DefaultSplashViewController.swift in Sources */,
 				A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
 				A3F341BE1F859BA1003180FA /* User.swift in Sources */,

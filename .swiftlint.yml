@@ -1,5 +1,5 @@
-line_length: 200
-file_length: 500
+line_length: 250
+file_length: 600
 excluded:
   - Carthage
   - Pods
