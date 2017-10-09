@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class BaseViewController: UIViewController {
+open class BaseViewController: UIViewController {
 
     @IBOutlet
     var keyboardView: UIView?
