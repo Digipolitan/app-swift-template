@@ -43,6 +43,7 @@ public class Session {
             fatalError("Session already started, please use the restore method")
         }
         let session = Session()
+        session.save()
         Session.opened = session
         return session
     }

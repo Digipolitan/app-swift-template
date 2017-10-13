@@ -14,7 +14,7 @@ public class TimerSplashViewController: SplashViewController {
         public static let duration: TimeInterval = 2
     }
 
-    private var timer: Timer!
+    private var timer: Timer?
     public var duration: TimeInterval = Consts.duration
 
     public init(duration: TimeInterval = Consts.duration, nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

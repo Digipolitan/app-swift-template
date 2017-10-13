@@ -15,21 +15,6 @@ public protocol FieldValidator {
     func validate(field: FormField, in form: Form) throws
 }
 
-public struct FieldValidatorClosure: FieldValidator {
-
-    public static var failureKey: String! = nil
-
-    private let closure: (FormField, Form) throws -> Void
-
-    public init(closure: @escaping (FormField, Form) throws -> Void) {
-        self.closure = closure
-    }
-
-    public func validate(field: FormField, in form: Form) throws {
-        try self.closure(field, form)
-    }
-}
-
 public struct FieldValidatorArray: FieldValidator {
 
     public static var failureKey: String! = nil

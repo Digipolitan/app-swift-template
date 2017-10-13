@@ -19,9 +19,15 @@ public struct FormError: LocalizedError {
     }
 
     public var errorDescription: String? {
-        guard let localized = self.error as? LocalizedError else {
-            return nil
+        guard let localized = self.error as? LocalizedError,
+            let errorDescription = localized.errorDescription else {
+            return self.field.name
         }
-        return localized.errorDescription
+        var msg = ""
+        if let name = self.field.name {
+            msg = "\(name): "
+        }
+        msg += errorDescription
+        return msg
     }
 }

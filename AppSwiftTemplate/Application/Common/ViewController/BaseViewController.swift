@@ -15,11 +15,20 @@ open class BaseViewController: UIViewController {
 
     public var keyboardOptions = Keyboard.Options(mode: .insets)
 
+    public var session: Session? {
+        return Session.restore()
+    }
+
     public var keyboard: Keyboard?
 
-    public lazy var theme: Theme = {
-        return ThemeManager.shared.current
-    }()
+    func setupUI(theme: Theme) {
+        self.view.setAppearance(theme.scene)
+    }
+
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupUI(theme: ThemeManager.shared.current)
+    }
 
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

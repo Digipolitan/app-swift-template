@@ -36,7 +36,6 @@ public class FormField {
     public let validator: FieldValidator?
     public let transformer: FieldTransformer?
     public let name: String?
-    public let isRequired: Bool
     public var value: Any? {
         get {
             return self.data
@@ -64,14 +63,12 @@ public class FormField {
                 name: String? = nil,
                 validator: FieldValidator? = nil,
                 transformer: FieldTransformer? = nil,
-                required: Bool = false,
                 value: Any? = nil) {
         self.identifier = identifier
         self.target = target
         self.name = name
         self.validator = validator
         self.transformer = transformer
-        self.isRequired = required
         self.value = value
     }
 

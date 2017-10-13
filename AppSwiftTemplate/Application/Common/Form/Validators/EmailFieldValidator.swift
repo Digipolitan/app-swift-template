@@ -21,7 +21,10 @@ public struct EmailFieldValidator: FieldValidator {
     }
 
     public func validate(field: FormField, in form: Form) throws {
-        guard let str = field.value as? String, str.characters.count > 0, predicate.evaluate(with: str) else {
+        guard let str = field.value as? String, str.characters.count > 0 else {
+            return // Skip empty field
+        }
+        guard predicate.evaluate(with: str) else {
             throw FieldValidators.Localization.error(validator: EmailFieldValidator.self)
         }
     }

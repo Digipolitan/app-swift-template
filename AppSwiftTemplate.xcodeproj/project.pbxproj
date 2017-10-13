@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30B00E21F90EC2A008A0E65 /* ViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B00E11F90EC2A008A0E65 /* ViewAppearance.swift */; };
+		A30B00E81F910916008A0E65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B00E61F910916008A0E65 /* LoginViewController.swift */; };
+		A30B00E91F910916008A0E65 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30B00E71F910916008A0E65 /* LoginViewController.xib */; };
 		A30C1FE21F829B4B00B3BF26 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FD21F829A1200B3BF26 /* Session.swift */; };
 		A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */; };
 		A31866701F867C9C00D10460 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318666F1F867C9C00D10460 /* Theme.swift */; };
@@ -34,7 +37,6 @@
 		A36EB08F1F8BC2DC0080B4D7 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB08C1F8BBF990080B4D7 /* FieldValidator.swift */; };
 		A36EB0901F8BC2E50080B4D7 /* FormTextFieldDelegateChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB0801F8BBF990080B4D7 /* FormTextFieldDelegateChainable.swift */; };
 		A36EB0911F8BC2E50080B4D7 /* FieldTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB0811F8BBF990080B4D7 /* FieldTransformer.swift */; };
-		A36EB0921F8BC2E50080B4D7 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB0821F8BBF990080B4D7 /* FormViewController.swift */; };
 		A36EB0931F8BC2E50080B4D7 /* TrimFieldTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB0841F8BBF990080B4D7 /* TrimFieldTransformer.swift */; };
 		A36EB0941F8BC2E50080B4D7 /* EmptyIsNilFieldTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB0851F8BBF990080B4D7 /* EmptyIsNilFieldTransformer.swift */; };
 		A36EB0951F8BC2E50080B4D7 /* FormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36EB0861F8BBF990080B4D7 /* FormError.swift */; };
@@ -47,7 +49,6 @@
 		A3AD551E1F8BDDB6004CE111 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3AD55201F8BDDB6004CE111 /* Localizable.strings */; };
 		A3AD55221F8BE05E004CE111 /* FieldTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AD55211F8BE05E004CE111 /* FieldTransformers.swift */; };
 		A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */; };
-		A3F341BE1F859BA1003180FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F341BD1F859BA0003180FA /* User.swift */; };
 		AAB945447BF5DBE0243B998D /* Pods_Common_AppSwiftTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33850ED3EDA7E0D1BD3D4611 /* Pods_Common_AppSwiftTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,9 @@
 
 /* Begin PBXFileReference section */
 		33850ED3EDA7E0D1BD3D4611 /* Pods_Common_AppSwiftTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Common_AppSwiftTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30B00E11F90EC2A008A0E65 /* ViewAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAppearance.swift; sourceTree = "<group>"; };
+		A30B00E61F910916008A0E65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A30B00E71F910916008A0E65 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A30C1FD21F829A1200B3BF26 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		A30C1FE01F829A1200B3BF26 /* TextAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAppearance.swift; sourceTree = "<group>"; };
@@ -104,7 +108,6 @@
 		A36B9A821F823F2000A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A36EB0801F8BBF990080B4D7 /* FormTextFieldDelegateChainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextFieldDelegateChainable.swift; sourceTree = "<group>"; };
 		A36EB0811F8BBF990080B4D7 /* FieldTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTransformer.swift; sourceTree = "<group>"; };
-		A36EB0821F8BBF990080B4D7 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		A36EB0841F8BBF990080B4D7 /* TrimFieldTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimFieldTransformer.swift; sourceTree = "<group>"; };
 		A36EB0851F8BBF990080B4D7 /* EmptyIsNilFieldTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyIsNilFieldTransformer.swift; sourceTree = "<group>"; };
 		A36EB0861F8BBF990080B4D7 /* FormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormError.swift; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 		A3AD551A1F8BCE45004CE111 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		A3AD551F1F8BDDB6004CE111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3AD55211F8BE05E004CE111 /* FieldTransformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldTransformers.swift; sourceTree = "<group>"; };
-		A3F341BD1F859BA0003180FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../../../../../../MacOS/Applications/PolymorphCLI/DerivedData/PolymorphCLI/Build/Products/Debug/build-1507156944.96932/Swift/Definitions/U/User.swift"; sourceTree = "<group>"; };
 		C20D27A1A24674F68AB22F72 /* Pods-Common-AppSwiftTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-AppSwiftTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Common-AppSwiftTemplate/Pods-Common-AppSwiftTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		E39C22F2B1C4E2809747A913 /* Pods-Common-AppSwiftTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common-AppSwiftTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Common-AppSwiftTemplate/Pods-Common-AppSwiftTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30B00E31F9108AE008A0E65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A30B00E61F910916008A0E65 /* LoginViewController.swift */,
+				A30B00E71F910916008A0E65 /* LoginViewController.xib */,
+			);
+			name = Login;
+			path = Authentication/Login;
+			sourceTree = "<group>";
+		};
 		A30C1FD11F829A1200B3BF26 /* Session */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +168,6 @@
 		A30C1FD91F829A1200B3BF26 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				A3F341BD1F859BA0003180FA /* User.swift */,
 				A30C1FDA1F829A1200B3BF26 /* Keyboard.swift */,
 			);
 			path = Keyboard;
@@ -170,6 +181,7 @@
 				A31866711F867CA900D10460 /* ThemeManager.swift */,
 				A31866771F86846300D10460 /* FontTransform.swift */,
 				A31866821F879D9200D10460 /* ThemeError.swift */,
+				A30B00E11F90EC2A008A0E65 /* ViewAppearance.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -262,6 +274,7 @@
 		A36B9A7C1F823F2000A2A6D0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A30B00E31F9108AE008A0E65 /* Login */,
 				A318668E1F890B6A00D10460 /* SplashScreen */,
 				A36B9A7D1F823F2000A2A6D0 /* Home */,
 			);
@@ -294,7 +307,6 @@
 			isa = PBXGroup;
 			children = (
 				A36EB0801F8BBF990080B4D7 /* FormTextFieldDelegateChainable.swift */,
-				A36EB0821F8BBF990080B4D7 /* FormViewController.swift */,
 				A36EB0831F8BBF990080B4D7 /* Transformers */,
 				A36EB0861F8BBF990080B4D7 /* FormError.swift */,
 				A36EB0871F8BBF990080B4D7 /* Form.swift */,
@@ -462,6 +474,7 @@
 				A3AD551E1F8BDDB6004CE111 /* Localizable.strings in Resources */,
 				A31866941F89170400D10460 /* AppDefaultSplashViewController.xib in Resources */,
 				A36B9A831F823F2700A2A6D0 /* app.production.json in Resources */,
+				A30B00E91F910916008A0E65 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +586,7 @@
 				A36EB0971F8BC2E50080B4D7 /* EmailFieldValidator.swift in Sources */,
 				A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
-				A3F341BE1F859BA1003180FA /* User.swift in Sources */,
+				A30B00E81F910916008A0E65 /* LoginViewController.swift in Sources */,
 				A36EB0911F8BC2E50080B4D7 /* FieldTransformer.swift in Sources */,
 				A36EB0931F8BC2E50080B4D7 /* TrimFieldTransformer.swift in Sources */,
 				A36EB0951F8BC2E50080B4D7 /* FormError.swift in Sources */,
@@ -583,13 +596,13 @@
 				A31866861F87E8BF00D10460 /* BaseViewController.swift in Sources */,
 				A3AD55221F8BE05E004CE111 /* FieldTransformers.swift in Sources */,
 				A31866721F867CA900D10460 /* ThemeManager.swift in Sources */,
+				A30B00E21F90EC2A008A0E65 /* ViewAppearance.swift in Sources */,
 				A36EB0961F8BC2E50080B4D7 /* Form.swift in Sources */,
 				A3C6CE3F1F838B5D00FC1E60 /* TextAppearance.swift in Sources */,
 				A30C1FE31F829B4E00B3BF26 /* Keyboard.swift in Sources */,
 				A30C1FE21F829B4B00B3BF26 /* Session.swift in Sources */,
 				A36EB0981F8BC2E50080B4D7 /* LengthFieldValidator.swift in Sources */,
 				A31866701F867C9C00D10460 /* Theme.swift in Sources */,
-				A36EB0921F8BC2E50080B4D7 /* FormViewController.swift in Sources */,
 				A31866781F86846300D10460 /* FontTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

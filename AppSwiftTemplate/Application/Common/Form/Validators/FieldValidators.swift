@@ -19,7 +19,7 @@ public class FieldValidators {
         }
 
         public static func error(validator: FieldValidator.Type, arguments: CVarArg...) -> ValidatorError {
-            return ValidatorError(message: validator.failureKey.localized(arguments: arguments, bundle: Localization.bundle, table: Localization.table))
+            return ValidatorError(message: validator.failureKey.localized(bundle: Localization.bundle, table: Localization.table, arguments: arguments))
         }
 
         public static func checkFailureKey(validator: FieldValidator.Type) {

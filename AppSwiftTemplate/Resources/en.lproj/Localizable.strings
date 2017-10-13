@@ -6,5 +6,23 @@
   Copyright © 2017 Digipolitan. All rights reserved.
 */
 
-"errors.validator.email" = "Email invalide wesh";
+// Errors
+"errors.validator.required" = "Missing required field";
+"errors.validator.email" = "Invalid email";
 "errors.validator.min_length_%d" = "At least %1$d characters";
+"errors.validator.max_length_%d" = "Maximum %1$d characters";
+
+// HomeViewController
+"home.title" = "Home";
+"home.login" = "Login";
+"home.logout" = "Logout";
+
+// LoginViewController
+"login.title" = "Login";
+"login.email" = "email";
+"login.email.placeholder" = "Email*";
+"login.first_name" = "firstName";
+"login.first_name.placeholder" = "FirstName";
+"login.last_name" = "lastName";
+"login.last_name.placeholder" = "LastName";
+"login.submit" = "Se connecter";

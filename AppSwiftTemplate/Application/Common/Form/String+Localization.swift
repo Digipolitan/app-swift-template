@@ -14,7 +14,11 @@ extension String {
         return bundle.localizedString(forKey: self, value: value, table: table)
     }
 
-    public func localized(arguments: CVarArg..., bundle: Bundle = .main, table: String? = nil, value: String? = nil) -> String {
+    public func localized(bundle: Bundle = .main, table: String? = nil, value: String? = nil, arguments: CVarArg...) -> String {
+        return self.localized(bundle: bundle, table: table, value: value, arguments: arguments)
+    }
+
+    public func localized(bundle: Bundle = .main, table: String? = nil, value: String? = nil, arguments: [CVarArg]) -> String {
         return String(format: bundle.localizedString(forKey: self, value: value, table: table), arguments: arguments)
     }
 }

@@ -15,7 +15,7 @@ public struct EmptyIsNilFieldTransformer: FieldTransformer {
     private init() { }
 
     public func transform(value: Any?) -> Any? {
-        guard let str = value as? String, str.characters.count > 0 else {
+        guard let str = value as? String, str.count > 0 else {
             return nil
         }
         return str

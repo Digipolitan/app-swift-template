@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             UIView.transition(with: window, duration: 1, options: .transitionCrossDissolve, animations: {
                 UIView.setAnimationsEnabled(false)
-                window.rootViewController = UINavigationController(rootViewController: HomeViewController())
+                window.rootViewController = UINavigationController(rootViewController: HomeViewController.newInstance())
                 UIView.setAnimationsEnabled(true)
             }, completion: nil)
         }
