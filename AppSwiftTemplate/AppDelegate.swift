@@ -21,9 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.bootstrap()
 
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UINavigationController(rootViewController: HomeViewController())
+        window.rootViewController = SplashNavigationController.newInstance(splashViewControllers: DefaultSplashViewController(nibName: "AppDefaultSplashViewController", bundle: nil)) { [weak self] _ in
+            guard let target = self,
+                let window = target.window else {
+                return
+            }
+            UIView.transition(with: window, duration: 1, options: .transitionCrossDissolve, animations: {
+                UIView.setAnimationsEnabled(false)
+                window.rootViewController = UINavigationController(rootViewController: HomeViewController.newInstance())
+                UIView.setAnimationsEnabled(true)
+            }, completion: nil)
+        }
         window.makeKeyAndVisible()
         self.window = window
+
         return true
     }
 }
