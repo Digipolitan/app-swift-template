@@ -8,6 +8,7 @@
 
 import UIKit
 import ObjectMapper
+import Monet
 
 class HomeViewController: BaseViewController {
 
@@ -15,11 +16,11 @@ class HomeViewController: BaseViewController {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var logoutButton: UIButton!
 
-    public class func newInstance() -> HomeViewController {
+    open class func newInstance() -> HomeViewController {
         return HomeViewController()
     }
 
-    override func setupUI(theme: Theme) {
+    open override func setupUI(theme: Theme) {
         super.setupUI(theme: theme)
         self.title = "home.title".localized()
         self.titleLabel.setAppearance(theme.h1)
@@ -30,12 +31,12 @@ class HomeViewController: BaseViewController {
         self.logoutButton.setTitle("home.logout".localized(), for: .normal)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.updateSessionUI()
     }
 
-    func updateSessionUI() {
+    public func updateSessionUI() {
         if self.session != nil {
             self.loginButton.isHidden = true
             self.logoutButton.isHidden = false

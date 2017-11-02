@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import Roadblock
+import Monet
+import SessionKit
 
-class LoginViewController: BaseViewController {
+public class LoginViewController: BaseViewController {
 
-    enum Field {
-        static let email = "email"
-        static let lastName = "last_name"
-        static let firstName = "first_name"
+    public enum Field {
+        public static let email = "email"
+        public static let lastName = "last_name"
+        public static let firstName = "first_name"
     }
 
-    var form: Form!
-    var formTextFieldChainable: FormTextFieldDelegateChainable!
+    public fileprivate(set) var form: Form!
+    public fileprivate(set) var formTextFieldChainable: FormTextFieldDelegateChainable!
 
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
@@ -25,16 +28,16 @@ class LoginViewController: BaseViewController {
     @IBOutlet var submitButton: UIButton!
     @IBOutlet var closeButton: UIButton!
 
-    public class func newInstance() -> LoginViewController {
+    open class func newInstance() -> LoginViewController {
         return LoginViewController()
     }
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         self.createForm()
     }
 
-    override func setupUI(theme: Theme) {
+    open override func setupUI(theme: Theme) {
         super.setupUI(theme: theme)
         self.title = "login.title".localized()
         self.emailTextField.setAppearance(theme.input)
@@ -53,7 +56,7 @@ class LoginViewController: BaseViewController {
         self.closeButton.setAppearance(theme.action)
     }
 
-    func createForm() {
+    open func createForm() {
         let form = Form(fields: [
             .init(identifier: Field.email,
                 target: self.emailTextField,
@@ -119,7 +122,7 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController: FormDelegate {
 
-    func formDidSubmit(_ form: Form) {
+    public func formDidSubmit(_ form: Form) {
         self.touchSubmit()
     }
 }
