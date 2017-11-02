@@ -10,6 +10,7 @@ import UIKit
 import RuntimeEnvironment
 import DependencyInjector
 import Domain
+import SplashKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

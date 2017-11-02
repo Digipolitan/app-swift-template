@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Monet
+import AutomaticKeyboard
+import SessionKit
 
 open class BaseViewController: UIViewController {
 
-    @IBOutlet
-    var keyboardView: UIView?
+    @IBOutlet var keyboardView: UIView?
 
     public var keyboardOptions = Keyboard.Options(mode: .insets)
 
@@ -21,7 +23,7 @@ open class BaseViewController: UIViewController {
 
     public var keyboard: Keyboard?
 
-    func setupUI(theme: Theme) {
+    open func setupUI(theme: Theme) {
         self.view.setAppearance(theme.scene)
     }
 

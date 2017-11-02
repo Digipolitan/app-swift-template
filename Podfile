@@ -18,5 +18,10 @@ abstract_target 'Common' do
         platform :ios, '8.0'
 
         pod 'SwiftMessages'
+        pod 'AutomaticKeyboard'
+        pod 'Monet'
+        pod 'SessionKit'
+        pod 'SplashKit'
+        pod 'Roadblock'
     end
 end
