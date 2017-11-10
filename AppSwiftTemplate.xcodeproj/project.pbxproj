@@ -24,7 +24,6 @@
 		A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A811F823F2000A2A6D0 /* AppDelegate.swift */; };
 		A36B9A8B1F823FFB00A2A6D0 /* Domain.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3892BE71FB46645009C2712 /* LoaderView+ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BDF1FB46645009C2712 /* LoaderView+ServiceError.swift */; };
-		A3892BE81FB46645009C2712 /* ServiceError+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE01FB46645009C2712 /* ServiceError+Localizable.swift */; };
 		A3892BE91FB46645009C2712 /* UIView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE21FB46645009C2712 /* UIView+NSLayoutConstraint.swift */; };
 		A3892BEA1FB46645009C2712 /* BasicLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3892BE41FB46645009C2712 /* BasicLoaderView.xib */; };
 		A3892BEB1FB46645009C2712 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE51FB46645009C2712 /* LoaderView.swift */; };
@@ -77,7 +76,6 @@
 		A36B9A811F823F2000A2A6D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A36B9A821F823F2000A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3892BDF1FB46645009C2712 /* LoaderView+ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoaderView+ServiceError.swift"; sourceTree = "<group>"; };
-		A3892BE01FB46645009C2712 /* ServiceError+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceError+Localizable.swift"; sourceTree = "<group>"; };
 		A3892BE21FB46645009C2712 /* UIView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		A3892BE41FB46645009C2712 /* BasicLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicLoaderView.xib; sourceTree = "<group>"; };
 		A3892BE51FB46645009C2712 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				A3892BDF1FB46645009C2712 /* LoaderView+ServiceError.swift */,
-				A3892BE01FB46645009C2712 /* ServiceError+Localizable.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -499,7 +496,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
-				A3892BE81FB46645009C2712 /* ServiceError+Localizable.swift in Sources */,
 				A3892BE91FB46645009C2712 /* UIView+NSLayoutConstraint.swift in Sources */,
 				A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
