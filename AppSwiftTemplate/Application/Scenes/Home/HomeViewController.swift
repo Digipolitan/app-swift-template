@@ -54,4 +54,13 @@ class HomeViewController: BaseViewController {
     @IBAction func touchLogin() {
         self.present(LoginViewController.newInstance(), animated: true)
     }
+
+    @IBAction func touchLoad() {
+        self.loaderView.load(message: "loader.now_loading".localized(), in: self.view)
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(timerDidFinish), userInfo: nil, repeats: false)
+    }
+
+    @objc func timerDidFinish() {
+        self.loaderView.dismiss()
+    }
 }

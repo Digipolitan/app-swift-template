@@ -12,6 +12,12 @@
 "errors.validator.min_length" = "At least %1$d characters";
 "errors.validator.max_length" = "Maximum %1$d characters";
 
+// LoaderView
+"loader.errors.service.unknown" = "An unknown error has occurred";
+"loader.errors.service.bad_request" = "Information entered is incorrect";
+"loader.errors.service.communication" = "A problem of communication has occurred";
+"loader.now_loading" = "Now loading...";
+
 // HomeViewController
 "home.title" = "Home";
 "home.login" = "Login";
@@ -25,4 +31,4 @@
 "login.first_name.placeholder" = "FirstName";
 "login.last_name" = "lastName";
 "login.last_name.placeholder" = "LastName";
-"login.submit" = "Se connecter";
+"login.submit" = "Submit";
