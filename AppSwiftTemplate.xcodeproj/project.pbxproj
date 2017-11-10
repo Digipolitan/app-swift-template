@@ -23,6 +23,12 @@
 		A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A7F1F823F2000A2A6D0 /* HomeViewController.swift */; };
 		A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B9A811F823F2000A2A6D0 /* AppDelegate.swift */; };
 		A36B9A8B1F823FFB00A2A6D0 /* Domain.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A36B9A631F822DCF00A2A6D0 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3892BE71FB46645009C2712 /* LoaderView+ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BDF1FB46645009C2712 /* LoaderView+ServiceError.swift */; };
+		A3892BE81FB46645009C2712 /* ServiceError+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE01FB46645009C2712 /* ServiceError+Localizable.swift */; };
+		A3892BE91FB46645009C2712 /* UIView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE21FB46645009C2712 /* UIView+NSLayoutConstraint.swift */; };
+		A3892BEA1FB46645009C2712 /* BasicLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3892BE41FB46645009C2712 /* BasicLoaderView.xib */; };
+		A3892BEB1FB46645009C2712 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE51FB46645009C2712 /* LoaderView.swift */; };
+		A3892BEC1FB46645009C2712 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3892BE61FB46645009C2712 /* UIView+Nib.swift */; };
 		A3AD551E1F8BDDB6004CE111 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3AD55201F8BDDB6004CE111 /* Localizable.strings */; };
 		AAB945447BF5DBE0243B998D /* Pods_Common_AppSwiftTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33850ED3EDA7E0D1BD3D4611 /* Pods_Common_AppSwiftTemplate.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +76,12 @@
 		A36B9A7F1F823F2000A2A6D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A36B9A811F823F2000A2A6D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A36B9A821F823F2000A2A6D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3892BDF1FB46645009C2712 /* LoaderView+ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoaderView+ServiceError.swift"; sourceTree = "<group>"; };
+		A3892BE01FB46645009C2712 /* ServiceError+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceError+Localizable.swift"; sourceTree = "<group>"; };
+		A3892BE21FB46645009C2712 /* UIView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		A3892BE41FB46645009C2712 /* BasicLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicLoaderView.xib; sourceTree = "<group>"; };
+		A3892BE51FB46645009C2712 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		A3892BE61FB46645009C2712 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		A3A94DE91F7B9AB800843BB2 /* AppSwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A94DFD1F7B9AB800843BB2 /* AppSwiftTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppSwiftTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AD551F1F8BDDB6004CE111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -204,9 +216,39 @@
 		A36B9A801F823F2000A2A6D0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A3892BDE1FB46645009C2712 /* Errors */,
+				A3892BE11FB46645009C2712 /* View */,
 				A31866841F87E8B200D10460 /* ViewController */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A3892BDE1FB46645009C2712 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A3892BDF1FB46645009C2712 /* LoaderView+ServiceError.swift */,
+				A3892BE01FB46645009C2712 /* ServiceError+Localizable.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		A3892BE11FB46645009C2712 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3892BE31FB46645009C2712 /* Loader */,
+				A3892BE21FB46645009C2712 /* UIView+NSLayoutConstraint.swift */,
+				A3892BE61FB46645009C2712 /* UIView+Nib.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3892BE31FB46645009C2712 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				A3892BE41FB46645009C2712 /* BasicLoaderView.xib */,
+				A3892BE51FB46645009C2712 /* LoaderView.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		A3A94DE01F7B9AB800843BB2 = {
@@ -335,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3892BEA1FB46645009C2712 /* BasicLoaderView.xib in Resources */,
 				A36B9A841F823F2700A2A6D0 /* app.development.json in Resources */,
 				A36B9A851F823F2700A2A6D0 /* app.staging.json in Resources */,
 				A36B9A871F823F2E00A2A6D0 /* HomeViewController.xib in Resources */,
@@ -456,10 +499,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36B9A891F823F3100A2A6D0 /* AppDelegate.swift in Sources */,
+				A3892BE81FB46645009C2712 /* ServiceError+Localizable.swift in Sources */,
+				A3892BE91FB46645009C2712 /* UIView+NSLayoutConstraint.swift in Sources */,
 				A31866881F87ECE500D10460 /* BaseViewController+Alert.swift in Sources */,
 				A36B9A881F823F2E00A2A6D0 /* HomeViewController.swift in Sources */,
 				A30B00E81F910916008A0E65 /* LoginViewController.swift in Sources */,
+				A3892BE71FB46645009C2712 /* LoaderView+ServiceError.swift in Sources */,
 				A31866861F87E8BF00D10460 /* BaseViewController.swift in Sources */,
+				A3892BEC1FB46645009C2712 /* UIView+Nib.swift in Sources */,
+				A3892BEB1FB46645009C2712 /* LoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
