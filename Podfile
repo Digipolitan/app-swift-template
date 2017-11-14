@@ -7,6 +7,7 @@ abstract_target 'Common' do
 	pod 'AlamofireLogging'
 	pod 'IdylleClient'
 	pod 'RuntimeEnvironment'
+	pod 'LocalizationToolkitObjectMapper'
 
 	target 'Domain' do
 		project 'Domain.xcodeproj'
