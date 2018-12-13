@@ -32,7 +32,9 @@ public class LoaderView: UIView {
     @IBOutlet public var cancelButton: UIButton?
     @IBOutlet public var reloadButton: UIButton?
 
+    // swiftlint:disable weak_delegate
     public weak var delegate: LoaderViewDelegate?
+    // swiftlint:enable weak_delegate
 
     @IBInspectable public var showsCancelButton: Bool = false
     @IBInspectable public var showsReloadButton: Bool = true

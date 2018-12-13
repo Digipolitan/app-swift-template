@@ -59,6 +59,6 @@ open class BaseViewController: UIViewController {
         childController.view.translatesAutoresizingMaskIntoConstraints = false
         parent.addSubview(childController.view)
         NSLayoutConstraint.activate(childController.view.constraintMatch(parent: parent))
-        self.addChildViewController(childController)
+        self.addChild(childController)
     }
 }

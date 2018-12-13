@@ -40,7 +40,7 @@ extension BaseViewController {
 
     private func defaultMessageConfig() -> SwiftMessages.Config {
         var config = SwiftMessages.defaultConfig
-        config.presentationContext = .window(windowLevel: UIWindowLevelStatusBar)
+        config.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
         return config
     }
 

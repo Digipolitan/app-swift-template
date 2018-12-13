@@ -5,18 +5,17 @@ abstract_target 'Common' do
 
 	pod 'DependencyInjectorObjectMapper'
 	pod 'AlamofireLogging'
-	pod 'IdylleClient'
 	pod 'RuntimeEnvironment'
 	pod 'LocalizationToolkitObjectMapper'
 
 	target 'Domain' do
 		project 'Domain.xcodeproj'
-		platform :ios, '8.0'
+		platform :ios, '9.0'
 	end
 
     target 'AppSwiftTemplate' do
         project 'AppSwiftTemplate.xcodeproj'
-        platform :ios, '8.0'
+        platform :ios, '9.0'
 
         pod 'SwiftMessages'
         pod 'AutomaticKeyboard'
